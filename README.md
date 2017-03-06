@@ -3,7 +3,7 @@
 We've started covering some javascript, let's test some of what we've covered.
 
 ## Deliverables
-Submit an MVC application that includes only a Home/Index action which contains a <script> tag on the view containing all of the required javascript by the instructions below. Push to a repository on github and submit your link.
+Submit an MVC application that includes only a Home/Index action which contains a `<script>` tag on the view containing all of the required javascript by the instructions below. Push to a repository on github and submit your link.
 
 ## Normal Mode
 Just like we do in Python, do these in javascript

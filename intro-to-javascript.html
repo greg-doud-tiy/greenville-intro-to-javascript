@@ -1,0 +1,73 @@
+<!--
+1. Assign "Hello World" to a variable message
+2. Assign a different string to a different variable
+3. Assign a number to a variable
+4.	books.push('');
+ Use string interpolation'ish to display the number in a string
+5. Make an array of your favorite movies or books or bands. Have at least 4 values.
+6. push new items into the above array, minimum of 3.
+7. Iterate through each item in your array and output that individual item to the screen.
+8. Turn a sentence into an Array, find the words that are six characters long and output them to the console. Here's your sentence: var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head><title></title>
+<style rel="stylesheet" type="text/css">
+div { font-family: Courier New; }
+</style>
+<script type="text/javascript">
+	function message(value) {
+		var msgs = document.getElementById('messages');
+		msgs.innerHTML += '<p>' + value + '</p>';
+	}
+	function assignment() {
+		// 1
+		var hw = "Hello World";
+		message("1. " + hw);
+		// 2
+		var fb = "Foo Bar";
+		message("2. " + fb);
+		// 3
+		var aNbr = 7;
+		message("3. " + aNbr);
+		// 4
+		var nbrInStr = hw + " I want " + aNbr + " " + fb + "s";
+		message("4. " + nbrInStr);
+		// 5 
+		var books = [ 'Lord of the Rings', 'Sign of Four'
+					, 'Hound of the Baskervilles', 'Green Eggs and Ham' ];
+		message("5. ==================");
+		for(idx in books) {
+			message(books[idx]);
+		}
+		// 6
+		books.push('The Bible');
+		books.push('The Di Vinci Code');
+		books.push('Killing Lincoln');
+		message("6. ==================");
+		for(idx in books) {
+			message(books[idx]);
+		}
+		// 7
+		message("7. ==================");
+		for(idx in books) {
+			message(books[idx]);
+		}
+		// 8
+		var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+		message("8. ==================");
+		var words = sentence.split(' ');
+		for(idx in words) {
+			if(words[idx].length == 6) {
+				message(words[idx]);
+			}
+		}
+	}
+</script>
+</head>
+<body onload="assignment()">
+<h4>Assignment - Intro to Javascript</h4>
+<div id='messages'></div>
+
+</body>
+</html>

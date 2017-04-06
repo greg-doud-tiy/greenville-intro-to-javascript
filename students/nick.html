@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head><title></title></head>
+<body>
+    <div class="jumbotron">
+        <h1>Java</h1>
+    </div>
+
+    <script>
+        var helloWorld = "Hello World";
+        var string = "Cats";
+        var Mouse = string;
+        var num = 1;
+        var arr = ["Harry", " Hermione", " Ron", " Draco"];
+        var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+        var strSplit = sentence.split(' ');
+        var sixLetterWord = 6;
+    </script>
+    
+    <p>
+        <script>
+            document.write(helloWorld);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(Mouse);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(num);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write("String Interpolation'ish: " + num);
+        </script>
+    </p>
+    <p>
+        <script>
+            arr.push(" Dubmledore", " Snape", " Voldy");
+        </script>
+    </p>
+    <p>
+        <script>
+            for (var i = 0; i < strSplit.length; i++)
+            {
+                if (strSplit[i].length == sixLetterWord)
+                {
+                    document.write(strSplit[i] + " ");
+                }
+
+            }
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(arr);
+        </script>
+    </p>
+</body>
+</html>

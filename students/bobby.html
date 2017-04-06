@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head><title></title></head>
+<body>
+    <script type="text/javascript">
+
+        var message = "Hello, world!";
+        var newMessage = "Hello again!";
+        var num = 100;
+        console.log("keeping it " + num);
+
+        var arr = ["Zac Brown Band", "Flo Rida", "Run The Jewels", "Hot 8 Brass Band"];
+        arr.push("Maxwell");
+        arr.push("Kings of Leon");
+        arr.push("Miguel");
+
+        var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+        var spltsent = sentence.split(' ');
+        var word = "";
+    </script>
+
+    <p>
+        <script>
+            document.write(message);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(newMessage);
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write("keeping it " + num);
+        </script>
+    </p>
+    <p>
+        <script>
+            for (var i = 0; i < arr.length; i++) {
+                document.write(arr[i] + "<br>");
+            }
+            
+        </script>
+    </p>
+    <p>
+        <script>
+            for (var i = 0; i < spltsent.length; i++) {
+                if (spltsent[i].length == 6)
+                {
+                    document.write(spltsent[i] + ", ");
+                }
+                
+            }
+            
+        </script>
+    </p>
+</body>

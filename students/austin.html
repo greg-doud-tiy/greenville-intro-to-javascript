@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><title></title></head>
+<body>
+    <h1 id="Hello"></h1>
+    <br />
+    <h4 id="Number"></h4>
+    <br />
+    <br />
+    <p id="Band"></p>
+    <br />
+    <br />
+    <p id="Words"></p>
+</body>
+
+<script type="text/javascript">
+    var message = "Hello, world! ";
+    document.getElementById("Hello").innerHTML = message;
+    var otherMessage = "My favorite number is: ";
+    var number = 13;
+    document.getElementById("Number").innerHTML = otherMessage + number;
+
+    var bands = ["AC/DC", "Guns N' Roses", "Boston", "Avenged Sevenfold"];
+    var item = "";
+    bands.push("'38 Special");
+    bands.push("Metallica");
+    bands.push("Journey");
+
+    for (i = 0; i < bands.length; i++) {
+        item += bands[i] + "<br>";
+    }
+    document.getElementById("Band").innerHTML = item;
+
+    var sentence = ["Schlitz", "four", "dollar", "toast", "godard", "truffaut", "bespoke", "neutra", "artisan", "pop-up", "Chia", "keytar", "single-origin",
+                    "coffee", "sustainable", "disrupt"];
+    var words = "";
+    for (j = 0; j < sentence.length; j++) {
+        if (sentence[j].length == 6) {
+            words += sentence[j] + "<br>";
+        }
+    }
+    document.getElementById("Words").innerHTML = words;
+
+</script>
+
+</html>

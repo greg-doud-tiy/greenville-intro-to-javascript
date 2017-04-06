@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html><head><title></title></head>
+<body>
+    <script type="text/javascript">
+        var message = "Hello World";
+        var nextMessage = "Goodbye World";
+        var number = "1";
+        var booksArr = ["The Way of Kings", "The name of the wind", "Gray Knight Omnibus"];
+        var sentence = "Schlidtz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+        var senArr = sentence.split(" ");
+        booksArr.push("NewPushBOok1", "NewPushBOok2", "NewPushBOok3");
+      /* function num () {
+
+            document.getElementById('num').value = ("I am number " + number + " at JS");
+        }
+        function books () {
+
+            document.getElementById('books').value = (booksArr);
+        }*/
+        document.writeln("I am number " + number + " at JS")
+        document.write("<br>");
+        for (var i = 0, length = booksArr.length; i < length; i++) {
+            document.writeln(booksArr[i]);
+            document.write("<br>");
+        }
+
+        for (var i = 0; i < senArr.length; i++) {
+            if (senArr[i].length == 6) {
+                word = senArr[i];
+                document.write(word);
+                document.write("<br>");
+            }
+        }
+       
+       
+    </script>
+   
+   <div>  
+    <!--<output type="text" id="num" ></output> --> 
+</div>
+</body>
+</html>
+    

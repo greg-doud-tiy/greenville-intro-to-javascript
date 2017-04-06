@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Intro</title>
+    <meta charset="utf-8" />
+
+</head>
+<body>
+    <h4>I am</h4>
+    <p id="number"></p>
+    <h4>years old</h4>
+
+    <h3> CLick the button to view my fave bands:</h3>
+    <button onclick="bandLoop(bandArr)">Favorite Bands</button>
+
+
+    <h3>Schlitz four dollar toast godard truffaut</h3>
+    <h3>bespoke neutra artisan pop-up. Chia keytar</h3>
+    <h3>single-origin coffee sustainable disrupt.</h3>
+    <h3> Click the button to see all the six letter words in the above sentence.</h3>
+    <button onclick="getLetters(sentence)">Get Words</button>
+
+
+    <script type="text/javascript">
+        var message = "Hello World";
+        var word = "pickle";
+        var x = "7";
+        var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt."
+        var bandArray = ["JJ Grey & Mofro", "The Infamous Stringdusters", "The Wood Brothers", "The Honeycutters"];
+        bandArray.push("Jason Isbell & The 500 Unit", "The Soulfeathers", "Drive-By Truckers")
+        document.getElementById("number").innerHTML = x.toString();
+
+        function bandLoop(bandArr) {
+           
+            var band = "";
+            var i;
+            for (i = 0; i < bandArray.length; i++) {
+                band = "Awesome Band:" + bandArray[i] + "<br/>"
+                document.write(band);
+            }
+        }
+        function getLetters(sentence) {
+            
+            var words = sentence.split(" ");
+            var sixLetters = new Array();
+            for (var i = 0; i < words.length; i++) {
+                if (words[i].length == 6) {
+                    sixLetters.push(words[i])
+                }
+            }
+            document.write(sixLetters)
+        }
+    </script>
+</body>
+</html>

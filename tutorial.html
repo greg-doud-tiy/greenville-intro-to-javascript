@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>tutorial.html - Intro to Javasript</title>
+<script type="text/javascript">
+	var nbr = 0;
+	function inc() {
+		var tnbr = document.getElementById('theNumber');		
+		tnbr.value = ++nbr;
+	}
+	function dec() {
+		var tnbr = document.getElementById('theNumber');
+		tnbr.value = --nbr;
+	}
+</script>
+</head>
+<body>
+	<h4>Inc/Dec the Number</h4>
+	<button onclick="dec()">-</button>
+	<input type="text" id="theNumber" value="0" />
+	<button onclick="inc()">+</button>
+</body>
+</html>

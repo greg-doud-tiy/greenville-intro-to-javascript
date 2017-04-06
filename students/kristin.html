@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DoStuff</title>
+
+    <script type="text/javascript">
+        var greeting = "Hello World";
+        var content = "This page has JavaScript in it!";
+        var num = 2;
+        var numInStr = "This string has a variable in it: " + num;
+        var booksNBands = ["Call of the Wild", "Evanessence", "Pride and Prejudice", "Imagine Dragons"];
+        var sentence = "Schlitz four dollar toast godard truffaut bespoke "
+                            + "neutra artisan pop-up. Chia keytar single-origin "
+                            + "coffee sustainable disrupt.";
+
+        window.onload = function () {
+            document.write("Array Before: " + "<br />");
+            displayBNB();
+            pushBNB();
+
+            document.write("<br />" + "Array After: " + "<br />");
+            displayBNB();
+
+            document.write("<br />" + "Sentence Before: " + "<br />");
+            document.write(sentence);
+
+            document.write("<br /> <br/>" + "Sentence After: " + "<br />");
+            longWords();
+
+            document.write("<br /> <br />" + "Other stuff: " + "<br />");
+            displayStuff();
+        }
+
+        function displayStuff() {
+            document.write(greeting + "<br />");
+            document.write(content + "<br />");
+            document.write(numInStr + "<br />");
+        }
+
+        function pushBNB() {
+            booksNBands.push("One Republic", "The Little Prince", "Foo Fighters");
+        };
+
+        function displayBNB() {
+            for (b in booksNBands) {
+                document.write(booksNBands[b] + "<br/>");
+            }
+        };
+
+        function longWords() {
+            sentence = sentence.split(" ");
+
+            for (w in sentence) {
+                if (sentence[w].length == 6) {
+                    document.write(sentence[w] + " ");
+                }
+            }
+        };
+        
+    </script>
+
+</head>
+<body>
+    <h1>These</h1>
+    <h1>aren't</h1>
+    <h1>working... ?!</h1>
+</body>
+</html>

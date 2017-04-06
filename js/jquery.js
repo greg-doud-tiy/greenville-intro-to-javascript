@@ -1,16 +1,12 @@
 $().ready(function() {
 
-	$("#title").css("color", 'red').css("font-family", 'Tahoma').css("font-size", '2em');
-	$("p").css("font-weight", "bold");
+	var nbr = 0;
 
-	$("#phide").click(function() {
-		$("#ps").hide();
+	$("#inc").click(function() {
+		$("#aNbr").val(++nbr);
 	});
-	$("#pshow").click(function() {
-		$("#ps").show();
+	$("#dec").click(function() {
+		$("#aNbr").val(--nbr);
 	});
 
-	$("#getinp").click(function() {
-		$("#inp").val("Changed the text");
-	});
 });

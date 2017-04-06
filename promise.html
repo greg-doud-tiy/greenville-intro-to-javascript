@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head><title></title>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$().ready(function() {
+	
+	$("#go").click(function() {
+
+		$.getJSON("https://jsonplaceholder.typicode.com/posts/1", function(resp) {
+			console.log(resp);
+		}).done(function() {
+			$.getJSON("http://echo.jsontest.com/key/value/one/two", function(data) {
+				console.log("jsonTest");
+				console.log(data);
+			});
+		});
+
+	});
+
+
+});
+</script>
+</head>
+<body>
+<button id="go">Go</button>
+</body>
+</html>
